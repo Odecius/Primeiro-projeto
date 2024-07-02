@@ -1,2 +1,2 @@
 # Primeiro projeto
- Comecando um projeto com oambietne restaurante
+ Comecando um projeto de uma aplicação para restaurante.
