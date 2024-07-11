@@ -8,6 +8,32 @@ def menu_iniciar():
     print('3. Entrar como Produção.\n')
     print('4. Finalizar app\n')
 
+# def escolher_opcao():
+#    try:
+#        opcao_escolhida = int(input('Escolha uma opção: '))
+#        # opcao_escolhida = int(opcao_escolhida)
+#
+#        if opcao_escolhida == 1: 
+#            entrar_como_administrador()
+#        elif opcao_escolhida == 2: 
+#            entrar_como_operador()
+#        elif opcao_escolhida == 3: 
+#            entrar_como_producao()
+#        elif opcao_escolhida == 4: 
+#            finalizar_app()
+#        else: 
+#            opcao_invalida()
+#    except:
+#        opcao_invalida()
+
+# def exibir_subtitulo(texto):
+#    os.system('cls')
+#    linha  = '*' *(len(texto) + 1)
+#    print(linha)
+#    print(texto)
+#    print(linha)
+#    print()
+
 
 def mensagem_entrada(tipo_usuario):
     print()
