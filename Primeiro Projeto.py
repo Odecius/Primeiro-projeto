@@ -1,3 +1,5 @@
+import os
+
 def titulo():
     print("𝓞𝓼 𝓟𝓪𝓼𝓼𝓪 𝓕𝓸𝓶𝓮")
 
@@ -8,25 +10,7 @@ def menu_iniciar():
     print('3. Entrar como Produção.\n')
     print('4. Finalizar app\n')
 
-# def escolher_opcao():
-#    try:
-#        opcao_escolhida = int(input('Escolha uma opção: '))
-#        # opcao_escolhida = int(opcao_escolhida)
-#
-#        if opcao_escolhida == 1: 
-#            entrar_como_administrador()
-#        elif opcao_escolhida == 2: 
-#            entrar_como_operador()
-#        elif opcao_escolhida == 3: 
-#            entrar_como_producao()
-#        elif opcao_escolhida == 4: 
-#            finalizar_app()
-#        else: 
-#            opcao_invalida()
-#    except:
-#        opcao_invalida()
-
-# def exibir_subtitulo(texto):
+#def exibir_subtitulo(texto):
 #    os.system('cls')
 #    linha  = '*' *(len(texto) + 1)
 #    print(linha)
@@ -34,6 +18,8 @@ def menu_iniciar():
 #    print(linha)
 #    print()
 
+def opcao_invalida():
+    main()
 
 def mensagem_entrada(tipo_usuario):
     print()
@@ -41,13 +27,13 @@ def mensagem_entrada(tipo_usuario):
     print()
 
 def entrar_como_administrador():
-    mensagem_entrada('administrador')
+    mensagem_entrada('Administrador')
 
 def entrar_como_operador():
-    mensagem_entrada('operador')
+    mensagem_entrada('Operador')
 
 def entrar_como_producao():
-    mensagem_entrada('producao')
+    mensagem_entrada('Producao')
 
 def finalizar_app():
     print('Finalizando aplicativo...')
@@ -70,6 +56,7 @@ def escolher_opcao():
             print('Opção inválida. Tente novamente.')
     except ValueError:
         print('Entrada inválida. Por favor, insira um número.')
+        print()
 
 def main():
     titulo()
